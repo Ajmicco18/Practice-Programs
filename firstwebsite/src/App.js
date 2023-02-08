@@ -15,7 +15,8 @@ function App() {
 
   return (
     <>
-      <h1>Convert</h1>
+      <h1>Currency Converter</h1>
+      <h2>Convert</h2>
       <CurrencyRow />
       <div className="equals">=</div>
       <CurrencyRow />

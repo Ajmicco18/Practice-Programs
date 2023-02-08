@@ -5,12 +5,21 @@ body {
   align-items: center;
   min-height: 100vh;
   text-align: center;
+  background-color: gray;
 
 }
 
 h1 {
   margin: 0;
-  margin-bottom: .5rem;
+  margin-bottom: 20rem;
+  font-size: 60px;
+  color: black;
+}
+
+h2 {
+  margin: 0;
+  margin-bottom: 10;
+  color: black
 }
 
 .input {
