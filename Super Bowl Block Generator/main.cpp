@@ -13,6 +13,106 @@ int main()
 
     int AFC_array[SIZE];
     int NFC_array[SIZE];
+    string name_array[10][10] = {"Jim",
+                                 "Bob",
+                                 "Larry",
+                                 "Alex",
+                                 "Anthony",
+                                 "Nick",
+                                 "Jeremy",
+                                 "Gianna",
+                                 "Lexi",
+                                 "Renee",
+                                 "Jim",
+                                 "Bob",
+                                 "Larry",
+                                 "Alex",
+                                 "Anthony",
+                                 "Nick",
+                                 "Jeremy",
+                                 "Gianna",
+                                 "Lexi",
+                                 "Renee",
+                                 "Jim",
+                                 "Bob",
+                                 "Larry",
+                                 "Alex",
+                                 "Anthony",
+                                 "Nick",
+                                 "Jeremy",
+                                 "Gianna",
+                                 "Lexi",
+                                 "Renee",
+                                 "Jim",
+                                 "Bob",
+                                 "Larry",
+                                 "Alex",
+                                 "Anthony",
+                                 "Nick",
+                                 "Jeremy",
+                                 "Gianna",
+                                 "Lexi",
+                                 "Renee",
+                                 "Jim",
+                                 "Bob",
+                                 "Larry",
+                                 "Alex",
+                                 "Anthony",
+                                 "Nick",
+                                 "Jeremy",
+                                 "Gianna",
+                                 "Lexi",
+                                 "Renee",
+                                 "Jim",
+                                 "Bob",
+                                 "Larry",
+                                 "Alex",
+                                 "Anthony",
+                                 "Nick",
+                                 "Jeremy",
+                                 "Gianna",
+                                 "Lexi",
+                                 "Renee",
+                                 "Jim",
+                                 "Bob",
+                                 "Larry",
+                                 "Alex",
+                                 "Anthony",
+                                 "Nick",
+                                 "Jeremy",
+                                 "Gianna",
+                                 "Lexi",
+                                 "Renee",
+                                 "Jim",
+                                 "Bob",
+                                 "Larry",
+                                 "Alex",
+                                 "Anthony",
+                                 "Nick",
+                                 "Jeremy",
+                                 "Gianna",
+                                 "Lexi",
+                                 "Renee",
+                                 "Jim",
+                                 "Bob",
+                                 "Larry",
+                                 "Alex",
+                                 "Anthony",
+                                 "Nick",
+                                 "Jeremy",
+                                 "Gianna",
+                                 "Lexi",
+                                 "Renee",
+                                 "Jim",
+                                 "Bob",
+                                 "Larry",
+                                 "Alex",
+                                 "Anthony",
+                                 "Nick",
+                                 "Jeremy",
+                                 "Gianna",
+                                 "Lexi",
+                                 "Renee"};
 
     for (int i = 0; i < SIZE; i++)
     {
@@ -58,14 +158,23 @@ int main()
         NFC_array[i] = a;
     }
 
-    cout << "AFC numbers: " << endl;
+    cout << "Chiefs" << endl;
     for (int i = 0; i < SIZE; i++)
     {
         cout << AFC_array[i] << " ";
     }
 
+    for (int i = 0; i < 10; i++)
+    {
+        for (int j = 0; j < 10; j++)
+        {
+            cout << name_array[i][j];
+        }
+        cout << endl;
+    }
+
     cout << endl
-         << "NFC numbers: " << endl;
+         << "Eagles" << endl;
     for (int i = 0; i < SIZE; i++)
     {
         cout << NFC_array[i] << " ";
