@@ -6,7 +6,6 @@ body {
   min-height: 100vh;
   text-align: center;
   background-color: gray;
-
 }
 
 h1 {
@@ -19,6 +18,8 @@ h1 {
 h2 {
   margin: 0;
   margin-bottom: 10;
+  font-size: 40px;
+  height: 15vh;
   color: black
 }
 
