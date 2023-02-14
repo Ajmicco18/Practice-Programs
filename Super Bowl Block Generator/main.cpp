@@ -1,4 +1,5 @@
 #include <iostream>
+#include <iomanip>
 #include <cstdlib>
 #include <ctime>
 #include <cmath>
@@ -158,27 +159,26 @@ int main()
         NFC_array[i] = a;
     }
 
-    cout << "Chiefs" << endl;
+    cout << setw(58) << "Chiefs" << endl
+         << endl;
     for (int i = 0; i < SIZE; i++)
     {
-        cout << AFC_array[i] << " ";
+        cout << "  " << setw(8) << AFC_array[i] << " ";
     }
+    cout << endl;
 
     for (int i = 0; i < 10; i++)
     {
+        cout << NFC_array[i] << " ";
         for (int j = 0; j < 10; j++)
         {
-            cout << name_array[i][j];
+            cout << setw(10) << name_array[i][j] << " ";
         }
-        cout << endl;
+        cout << endl
+             << endl;
     }
 
-    cout << endl
-         << "Eagles" << endl;
-    for (int i = 0; i < SIZE; i++)
-    {
-        cout << NFC_array[i] << " ";
-    }
+    cout << "Eagles" << endl;
 
     return 0;
 }
