@@ -1,22 +1,23 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import './App.css'
-import CurrencyRow from './CurrencyRow';
+import CurrencyInput from './CurrencyInput';
 
 function App() {
-  const [currencyOptions, setCurrencyOptions] = useState([])
-  console.log(currencyOptions)
+
+  const { amount1, setAmount1 } = useState(1);
+  const { amount2, setAmount2 } = useState(1);
+  const { currency1, setCurrency1 } = useState('USD');
+  const { currency2, setCurrency2 } = useState('USD');
+
 
   return (
-    <>
-      <h1>Currency Converter</h1>
-      <h2>Convert</h2>
-      <CurrencyRow />
-      <div className="equals">=</div>
-      <CurrencyRow />
-    </>
+    <div>
+      <CurrencyInput currencies={['USD']} amount={amount1} currency={currency1} />
+      <CurrencyInput currencies={['USD']} amount={amount2} currency={currency2} />
+    </div>
 
 
-  )
+  );
 }
 
 export default App;
