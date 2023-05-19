@@ -3,6 +3,13 @@
 
 <head>
     <title> Learning Layouts </title>
+    <!--Two ways to modify spacing in CSS: margin and padding.
+        Margin modifies the spacing outside of the section,
+        and padding modifies the inside of the section. You
+        can use 1,2 or values to modify where you want spacing. 
+        It just works like a clock: padding: topVal rightVal bottomVal,
+        leftVal;
+    -->
     <style>
         body {
             background: gray;
@@ -22,6 +29,25 @@
             background: black;
             color: white;
             padding: 20px;
+            display: flex;
+            flex-direction: row;
+        }
+
+        div {
+            background: blue;
+            width: 100px;
+            margin: auto;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+
+        li {
+            display: inline-block;
+            margin-right: 20px;
         }
 
         footer {
@@ -34,9 +60,24 @@
 
 
 <body>
-    <h1>Building a layout! </h1>
-    <header>Header</header>
-    <section>Section 1</section>
+    <!--A <div></div> tag simply means divider-->
+    <!--Using display: flex; is called "flexbox". 
+    Google it for more info.-->
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Locations</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+        <h1></h1>
+    </header>
+    <section>
+        <div>a</div>
+        <div>b</div>
+        <div>c</div>
+    </section>
     <section>Section 2</section>
     <footer>Footer</footer>
 
