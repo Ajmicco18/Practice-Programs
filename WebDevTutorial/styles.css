@@ -7,27 +7,12 @@ body {
 }
 
 header {
-    background: white;
     color: black;
     padding: 20px;
 }
 
-section {
-    background: black;
-    color: white;
-    padding: 20px;
-    display: flex;
-    flex-direction: row;
-}
-
-section.feature-box.one div {
-    background: red;
-}
-
-div {
-    background: blue;
-    width: 100px;
-    margin: auto;
+h1 {
+    color: lightskyblue;
 }
 
 ul {
@@ -45,7 +30,7 @@ li {
 }
 
 li:hover {
-    background: rgb(92, 92, 92);
+    background: lightskyblue;
 }
 
 li:first-child {
@@ -54,14 +39,50 @@ li:first-child {
 
 a {
     text-decoration: none;
+    color: black;
 }
 
 a:hover {
     text-decoration: underline;
 }
 
+section {
+    background: black;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+section.feature-box.one div {
+    background: lightskyblue;
+}
+
+section.feature-box.one {
+    background: gray;
+    height: 100px;
+
+}
+
+section.feature-box.two {
+    background: lightskyblue;
+    height: 100px;
+}
+
+div {
+    background: blue;
+    width: 100px;
+    height: 20px;
+    margin: 30px;
+    border-radius: 5px;
+}
+
+div.one {
+    margin-left: 0;
+}
+
 footer {
-    background: white;
+    background: gray;
     color: black;
     padding: 10px 20px;
 }
