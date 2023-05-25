@@ -20,6 +20,10 @@ section {
     flex-direction: row;
 }
 
+section.feature-box.one div {
+    background: red;
+}
+
 div {
     background: blue;
     width: 100px;
@@ -34,7 +38,26 @@ ul {
 
 li {
     display: inline-block;
-    margin-right: 20px;
+    margin-left: 20px;
+    background: gray;
+    padding: 3px;
+    border-radius: 3px;
+}
+
+li:hover {
+    background: rgb(92, 92, 92);
+}
+
+li:first-child {
+    margin-left: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 footer {
