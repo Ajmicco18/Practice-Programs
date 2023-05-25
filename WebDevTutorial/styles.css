@@ -47,15 +47,11 @@ a:hover {
 }
 
 section {
-    background: black;
+    background: gray;
     color: white;
     padding: 20px;
     display: flex;
     flex-direction: row;
-}
-
-section.feature-box.one div {
-    background: lightskyblue;
 }
 
 section.feature-box.one {
@@ -70,7 +66,7 @@ section.feature-box.two {
 }
 
 div {
-    background: blue;
+    background: lightskyblue;
     width: 100px;
     height: 20px;
     margin: 30px;
