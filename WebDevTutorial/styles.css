@@ -6,9 +6,34 @@ body {
     padding: 0;
 }
 
+/*HEADER*/
 header {
+    background-image: url("images/hero.jpg");
+    background-size: 100%;
+    background-position: center;
     color: black;
+    height: 400px;
     padding: 20px;
+    text-align: center;
+}
+
+header a {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-top: 40px;
+}
+
+header .logo a {
+    background-image: url("images/logo.png");
+    background-size: 300px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 110px;
+    position: relative;
+    text-indent: -99999px;
+    top: -50px;
+    width: 300px;
 }
 
 h1 {
@@ -24,7 +49,6 @@ ul {
 li {
     display: inline-block;
     margin-left: 20px;
-    background: gray;
     padding: 3px;
     border-radius: 3px;
 }
@@ -46,23 +70,28 @@ a:hover {
     text-decoration: underline;
 }
 
-section {
-    background: gray;
-    color: white;
+/*FEATURES*/
+.features {
+    background: white;
+    color: gray;
     padding: 20px;
     display: flex;
     flex-direction: row;
 }
 
-section.feature-box.one {
-    background: gray;
-    height: 100px;
-
+.features figure {
+    margin: auto;
+    width: 200px;
+    text-align: center;
 }
 
-section.feature-box.two {
-    background: lightskyblue;
-    height: 100px;
+.features figure img {
+    border: 1px solid white;
+    border-radius: 50%;
+    box-shadow: gray 0 0 10px;
+    /*Takes 4 properties: color, offset of horizontal, offest of vertical, and width*/
+    width: 200px;
+
 }
 
 div {
@@ -77,8 +106,11 @@ div.one {
     margin-left: 0;
 }
 
+/*FOOTER*/
 footer {
-    background: gray;
-    color: black;
-    padding: 10px 20px;
+    background: black;
+    color: gray;
+    font-size: 12px;
+    padding: 20px 20px;
+    text-align: center;
 }
