@@ -21,3 +21,7 @@ myList.append("BMW")
 myList.append("Mercedes")
 myCars = tuple(myList)
 print(myCars)
+
+fruits = ("apple", "pear", "strawberry")
+myTuple = 2*fruits
+print(myTuple)
