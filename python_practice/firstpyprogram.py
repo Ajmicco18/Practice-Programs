@@ -25,3 +25,11 @@ print(myCars)
 fruits = ("apple", "pear", "strawberry")
 myTuple = 2*fruits
 print(myTuple)
+
+x = 10
+for y in range(10):
+    x *= 10
+    print(x)
+    if x > 100000:
+        print("x is now greater than 100000")
+        break
