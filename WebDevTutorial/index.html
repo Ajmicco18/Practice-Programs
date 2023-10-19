@@ -12,6 +12,7 @@
 
         h1 {
             color: #58c0f0;
+            text-align: center;
         }
 
         h2 {
@@ -26,6 +27,10 @@
             padding: 10px;
             border-radius: 6px;
         }
+
+        button:hover {
+            background-color: skyblue;
+        }
     </style>
 </head>
 
@@ -33,16 +38,21 @@
     <!--There are 6 <h></h> values which each font being smaller as you increment.
     Helps determine what info is the most important.-->
     <h1> My Webpage </h1>
-    <h2>About Me</h2>
-    <p>I like to lift and go out with my friends.
-        I love sports and I am trying to become a better
-        programmer!
-    </p>
+    <h2>Addition</h2>
+    <h3><input id="add-one">+<input id="add-two"></h3>
+    <h3 id="sum"></h3>
+    <h2>Subtraction</h2>
+    <h3> <input id="num-one"> - <input id="num-two"> </h3>
+    <h3 id="difference"></h3>
+    <h2>Multiplication</h2>
+    <h3><input id="mult-one"> x <input id="mult-two"></h3>
+    <h3 id=product></h3>
     <!--HTML does not care about white space. </br> is for line break,
     but not good practice.-->
     <!--<ul></ul> is for an unordered list and 
     <ol></ol> is for an ordered list-->
-    <button> Click here to learn more! </button>
+    <button id="change"> Click here to learn more! </button>
 </body>
+<script src="scripts/main.js"></script>
 
 </html>
