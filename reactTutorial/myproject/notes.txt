@@ -1,0 +1,27 @@
+1. Package.json file
+-Contains scripts that are required to run app (npm start, build,etc)
+-Also include dependencies (Other packages required to run react project)
+
+2. Node Modules Folder
+-This contains dependencies that are installed and essential to run project
+-They are installed when you run create-react-app command
+
+3. Public Folder
+-Favicon icon is useless
+-index.html is the main file in the app (Should not change any of the code here)
+-React will dynamically insert files and components 
+-The <div id="root"></div> allows React to take control of the HTML file
+-Also contains two other logos (Insignificant)
+-The manifest.json file is also insignificant
+
+4. src Folder
+-index.js is the starting point of the React app
+-document.getElementById in the index.js file allows React to use the HTML defined in index.html
+-Renders the app component from app.js (Import App from './app')
+-App.css simply defines the css for the app.js file
+-App.test.js is a test file for the app.js file (Don't worry about until testing)
+-index.css simply defines the css for the index.js file 
+-Another logo
+-reportWebVitals.js will be deleted and insignificant
+-setupTests.js is also insignificant
+
