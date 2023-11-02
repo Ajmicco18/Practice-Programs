@@ -66,5 +66,18 @@ State
 -Like a variable defined inside a function
 
 
+Ways to Bind Events
+1. Define method in constructor by using this.function=this.function.bind(this)
+2. Defining function using arrow notation (Arrow notation can access this keyword) 
+3. Define function normally, but use arrow notation in {} in event handler
+The most recommended way is simply to use arrow functions 
+
+useState Hook 
+-Set an "array" equal to useState() (const[var,setVar]= useState())
+-The useState hook allows you to set the initial value of your variable
+-The first element in the array is the variable
+-The second element in the array is the function used to manipulate the variable
+
+
 
 

@@ -1,9 +1,8 @@
 function FunctionEvent() {
 
-    function handleClick() {
+    const handleClick = () => {
         console.log("Button is clicked")
     }
-
     return (
         <div>
             Functional components
@@ -12,4 +11,6 @@ function FunctionEvent() {
     )
 }
 //Regular JS would have you use onclick without camel case
+//When handling button clicks, you use onClick={} and pass a function into ()
+
 export default FunctionEvent

@@ -6,40 +6,22 @@ class Counter extends Component {
         this.state = {
             counter: 0,
         };
+
+        //this.increment = this.increment.bind(this)
     }
 
-    increment() {
+    increment = () => { //Arrow functions have access to this keyword
+        console.log(this)
         this.setState({
             counter: this.state.counter + 1,
         })
     }
 
-    decrement() {
-        this.setState({
-            counter: this.state.counter - 1,
-        })
-    }
-
-    double() {
-        this.setState({
-            counter: this.state.counter * 2,
-        })
-    }
-
-    half() {
-        this.setState({
-            counter: this.state.counter / 2.
-        })
-    }
     render() {
         return (
             <div>
                 <h3>Count value is: {this.state.counter} </h3>
-                <button onClick={() => this.increment()}>Increment</button>
-                <button onClick={() => this.decrement()}>Decrement</button>
-                <button onClick={() => this.double()}>Double</button>
-                <button onClick={() => this.half()}>Half</button>
-
+                <button onClick={this.increment}>Increment</button>
             </div>
         )
     }
