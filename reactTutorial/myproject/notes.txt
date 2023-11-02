@@ -25,3 +25,46 @@
 -reportWebVitals.js will be deleted and insignificant
 -setupTests.js is also insignificant
 
+
+Components
+-Part of a user interface and key building block of React 
+-Each app contains several small components
+-Smaller, nested components makeup the larger parent component
+-Components can be reused multiply times with different properties
+-Component code is usually placed in JavaScript file (.js file)
+-Can create a functional component or class component 
+
+Functional Components
+-Simply a JS function that accepts a prop and returns HTML to describe the UI 
+-They are literally just JavaScript functions
+
+Class Component
+-It is simply a regular JavaScript class that extends from React's component class
+-However, they must contain a render method that returns HTML
+
+
+JSX
+-JSX stands for JavaScript XML 
+-JSX is an extension of JS syntax
+-You use JSX instead of HTML because JSX allows you write XML-like code and allows you
+to make your code simpler.
+
+
+Props (Properties)
+-Props are read only so you cannot change them (They are immutable)
+-Props are objects that hold info to control behavior of a control
+-Props are PASSED to the component 
+-Accessed as props, this.props
+-They are like parameters passed to a function 
+
+
+State
+-State is also an object that holds info but that info can be changed
+-Contained inside a component 
+-Access state in functional components using useState hook
+-Access state in class components using this.state
+-Like a variable defined inside a function
+
+
+
+
