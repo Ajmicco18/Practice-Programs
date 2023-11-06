@@ -1,18 +1,30 @@
 import { useState } from "react"
+import Counter from "./Counter"
+import FunctionalCounter from "./FunctionalCounter"
 
 export default function ConditionalComponent() {
     const [display, setDisplay] = useState(true)
 
+    const handleClick = () => {
+        if (display || !display) {
+            setDisplay(!display)
+        }
+    }
+
+
+
     if (display) {
         return (
             <div>
-                <h3>This is a conditional component</h3>
+                <Counter></Counter>
+                <button onClick={handleClick}>Click Me!</button>
             </div>
         )
     } else {
         return (
             <div>
-                <h3>Nothing to see here</h3>
+                <FunctionalCounter></FunctionalCounter>
+                <button onClick={handleClick}>Click Me!</button>
             </div>
         )
     }
