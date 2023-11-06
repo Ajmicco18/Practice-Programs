@@ -11,21 +11,13 @@ export default function ConditionalComponent() {
         }
     }
 
-
+    let output
 
     if (display) {
-        return (
-            <div>
-                <Counter></Counter>
-                <button onClick={handleClick}>Click Me!</button>
-            </div>
-        )
+        output = <div>< Counter ></Counter > <button onClick={handleClick}>Click Me!</button> </div>
     } else {
-        return (
-            <div>
-                <FunctionalCounter></FunctionalCounter>
-                <button onClick={handleClick}>Click Me!</button>
-            </div>
-        )
+        output = <div>< FunctionalCounter></FunctionalCounter> <button onClick={handleClick}>Click Me!</button> </div>
     }
+
+    return <div>{output}</div>
 }
