@@ -88,6 +88,9 @@ List Keys
 -You can make keys for regular arrays by using the indexOf function of arrays 
 -The value you get from indexOf function can be used for the keys
 
+Handling Input
+-Need an onChange handler in React or the input form will be read only 
+-To change the value, you need an onChange method
 
 
 

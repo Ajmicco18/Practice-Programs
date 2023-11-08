@@ -16,7 +16,7 @@ export default function Product() {
         </h3>)
     )
 
-    const fruitsList = fruits.map((fruit, index) => console.log(index))
+    const fruitsList = fruits.map((fruit, index) => <h3 key={index}>{fruit}</h3>)
 
 
 
