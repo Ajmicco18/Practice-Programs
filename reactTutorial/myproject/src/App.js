@@ -9,11 +9,12 @@ import FunctionEvent from './components/FunctionEvent.js';
 import ClassEvent from './components/ClassEvent.js';
 import FunctionalCounter from './components/FunctionalCounter.js';
 import ConditionalComponent from './components/ConditionalComponent.js';
+import Product from './components/Product.js';
 
 function App() {
   return (
     <div className="App">
-      <ConditionalComponent></ConditionalComponent>
+      <Product></Product>
     </div>
   );
 }

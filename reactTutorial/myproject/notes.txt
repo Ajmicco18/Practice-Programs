@@ -78,6 +78,17 @@ useState Hook
 -The first element in the array is the variable
 -The second element in the array is the function used to manipulate the variable
 
+List Keys
+-If you define a list without a key, the console will give you an error
+-"Each child in list should have own unique 'key' prop
+-The child in the list is the HTML (h3)
+-Keys need to be unique so components maintain identity acorss updates
+-If elements have the same key then when React updates them, both will be updated
+-It is good to make a list of objects to ensure key uniqueness
+-You can make keys for regular arrays by using the indexOf function of arrays 
+-The value you get from indexOf function can be used for the keys
+
+
 
 
 
