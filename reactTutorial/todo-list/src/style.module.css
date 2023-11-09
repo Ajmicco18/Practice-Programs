@@ -35,3 +35,21 @@ body {
     color: white;
     margin-top: 20px;
 }
+
+.todoitem {
+    margin: auto;
+    border: 2px solid whitesmoke;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.todoname {}
+
+.deletebutton {
+    border: none;
+    height: 50px;
+    background-color: tomato;
+    width: 100px;
+    border-radius: 5px;
+    color: white;
+}
