@@ -2,6 +2,7 @@ const header = {
     color: "blue",
     fontSize: "40px",
 }
+
 export default function InComponent() {
     return (
         <div>
