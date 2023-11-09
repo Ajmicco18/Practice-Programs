@@ -1,10 +1,10 @@
 import './App.css';
-import InlineComponent from './components/InlineComponent';
+import InComponent from './components/InComponent';
 import Todo from './components/Todo';
 
 function App() {
   return (
-    <InlineComponent></InlineComponent>
+    <InComponent></InComponent>
   );
 }
 
