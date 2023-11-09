@@ -92,6 +92,12 @@ Handling Input
 -Need an onChange handler in React or the input form will be read only 
 -To change the value, you need an onChange method
 
+CSS Styling
+-CSS modules allow you to style classes locally and won't be applied to other elements
+with the same class. (The component you import the module in will only get those styles)
+-Don't have to worry about class names clashing
+-Using CSS style sheets or CSS Modules are the two most recommended ways to style
+
 
 
 
